@@ -8,6 +8,8 @@ This folder contains array problems solved in C++.
 3. Majority Element (Moore’s Voting Algorithm)
 4. Valid anagram
 5. Largest Number
+6. Minimum time difference
+7. Number of laser beams in a bank 
 
 
 ## Language
