@@ -44,7 +44,7 @@ If two words have the same characters with the same frequency, they belongs to t
 
 **Intuition**
 For each index in the string:
--Treat it as a center
--Expand left and right
--stop when character don't match
--Track the longest palindrome found
+- Treat it as a center
+- Expand left and right
+- stop when character don't match
+- Track the longest palindrome found
