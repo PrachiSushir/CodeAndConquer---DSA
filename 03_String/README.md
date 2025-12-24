@@ -39,3 +39,12 @@ If any character appears more than (n + 1) / 2 times, rearrangement is impossibl
 **Intuition:**  
 If two words have the same characters with the same frequency, they belongs to the same group
 - Order does not matter
+
+7. Longest palidromic substring
+
+**Intuition**
+For each index in the string:
+-Treat it as a center
+-Expand left and right
+-stop when character don't match
+-Track the longest palindrome found
