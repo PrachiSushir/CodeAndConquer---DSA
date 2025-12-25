@@ -42,8 +42,8 @@ If two words have the same characters with the same frequency, they belongs to t
 
 7. Longest palidromic substring
 
-**Intuition**
-For each index in the string:
+**Intuition:**
+- For each index in the string:
 - Treat it as a center
 - Expand left and right
 - stop when character don't match
