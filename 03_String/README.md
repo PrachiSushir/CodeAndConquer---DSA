@@ -48,3 +48,12 @@ If two words have the same characters with the same frequency, they belongs to t
 - Expand left and right
 - stop when character don't match
 - Track the longest palindrome found
+
+8. Find the Index of the First Occurrence in a String(LeetCode 28):
+
+**Intuition:**
+- Start checking from each index of haystack
+- From that index, try to match all characters of needle
+- If all characters match --> return that index
+- If no match found after full traversal --> return -1.
+
