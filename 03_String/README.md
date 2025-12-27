@@ -59,7 +59,7 @@ If two words have the same characters with the same frequency, they belongs to t
 
 9. String to integer(leetcode 8):
 
-**Intuition**
+**Intuition:**
 - Ignore the spaces
 - Notice the sign (-)
 - Read digits until something invalid appears
@@ -67,3 +67,12 @@ If two words have the same characters with the same frequency, they belongs to t
 - check overflow (INT_MAX, INT_MIN)-->
 - return INT_MAX or INT_MIN according to sign.
 
+10. String compression(Leetcode 443):
+
+**Intuition:**
+- Traverse the string character by character
+- Count how many times the same character appears consecutively
+- Append:
+-   the character
+-   followed by its count
+- Move to the next new character
