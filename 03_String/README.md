@@ -76,3 +76,21 @@ If two words have the same characters with the same frequency, they belongs to t
 -   the character
 -   followed by its count
 - Move to the next new character
+
+11. Integer to Roman(Leetcode 12):
+
+**Intuition**
+INTUITION: Integer to Roman
+
+Roman numerals are built by always using the largest possible symbol
+that does not exceed the remaining number.
+Instead of constructing the number from small to large,
+we break the number from large to small.
+
+For example:
+1994 = 1000 + 900 + 90 + 4
+     = M + CM + XC + IV
+
+So, if we keep subtracting the largest valid Roman value at each step,
+we will always get the correct Roman representation.
+This observation naturally leads to a greedy approach.
