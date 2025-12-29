@@ -50,13 +50,15 @@ O(n)
 5. Simulation of wave or zigzag motion patterns.
 
 */
+// Logic:
 
 #include <iostream>
 #include <vector>
+#include <string>
 using namespace std;
 
 string convert(string s, int numRows) {
-    if (numRows == 1 || s.length() <= numRows)
+    if (numRows == 1 || s.length() <= static_cast<size_t>(numRows))
         return s;
 
     vector<string> rows(numRows);
@@ -66,16 +68,14 @@ string convert(string s, int numRows) {
     for (char c : s) {
         rows[currRow] += c;
 
-        // Change direction at top or bottom
         if (currRow == 0 || currRow == numRows - 1)
             goingDown = !goingDown;
 
         currRow += goingDown ? 1 : -1;
     }
 
-    // Combine all rows
     string result;
-    for (string row : rows)
+    for (const string& row : rows)
         result += row;
 
     return result;
@@ -88,3 +88,4 @@ int main() {
     cout << convert(s, numRows);
     return 0;
 }
+                                         
