@@ -79,18 +79,28 @@ If two words have the same characters with the same frequency, they belongs to t
 
 11. Integer to Roman(Leetcode 12):
 
-**Intuition**
-INTUITION: Integer to Roman
+**Intuition:**
 
-Roman numerals are built by always using the largest possible symbol
-that does not exceed the remaining number.
-Instead of constructing the number from small to large,
+- Roman numerals are built by always using the largest possible symbol that does not exceed the remaining number.
+- Instead of constructing the number from small to large,
 we break the number from large to small.
 
-For example:
+- For example:
 1994 = 1000 + 900 + 90 + 4
      = M + CM + XC + IV
 
-So, if we keep subtracting the largest valid Roman value at each step,
-we will always get the correct Roman representation.
-This observation naturally leads to a greedy approach.
+- So, if we keep subtracting the largest valid Roman value at each step, we will always get the correct Roman representation.
+- This observation naturally leads to a greedy approach.
+
+12. Zig-Zag conversion(Leetcode 6):
+
+**Intuition:**
+
+- If numRows == 1, return the string as it is (no zigzag possible).
+- Create a vector of strings where each index represents one row.
+- Traverse the string character by character:
+   - Move DOWN until the last row is reached.
+   - Then move UP diagonally until the first row is reached.
+- Append each character to the current row.
+- Finally, concatenate all rows to get the result.
+
