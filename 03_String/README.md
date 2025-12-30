@@ -104,3 +104,15 @@ we break the number from large to small.
 - Append each character to the current row.
 - Finally, concatenate all rows to get the result.
 
+13. Remove all adjacent duplicate in string 2(Leetcode 1209):
+
+**Intuition:**
+
+- Traverse the string from left to right one character at a time.
+- Use a stack to store each character along with its consecutive count.
+- If the current character matches the stack top, increment its count.
+- When the count reaches k, remove that character group from the stack.
+- If the character is different, push it into the stack with count = 1.
+- After traversal, rebuild the final string from the stack contents.
+- This ensures all k-length adjacent duplicates are removed efficiently.
+
