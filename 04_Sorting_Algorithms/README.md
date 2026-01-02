@@ -13,6 +13,8 @@
 
 
 2. Merge 2 sorted arrays(Leetcode 88):
+**Intuition:**
+
 - Both arrays are already sorted, and nums1 has extra space at the end.
 - To avoid overwriting elements, we start merging from the back.
 - Compare the largest remaining elements of both arrays.
@@ -21,8 +23,8 @@
 - Copy remaining elements of nums2 if any are left.
 
 3. k-diff Pairs in an array(Leetcode 532):
-/*
-🧠 INTUITION
+
+**INTUITION:**
 
 - We need to find UNIQUE number pairs whose difference is exactly k.
 - Sorting the array helps bring equal and nearby values together.
