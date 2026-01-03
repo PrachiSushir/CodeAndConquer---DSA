@@ -1,6 +1,7 @@
 /*
 # PROBLEM: K-diff Pairs in an Array
 
+#Problem Statement: 
 Given an integer array nums and an integer k,
 return the number of UNIQUE pairs (i, j) such that:
 
@@ -91,9 +92,13 @@ int findKDiffPairs(vector<int>& nums, int k) {
             i++;
             j++;
 
-            // Skip duplicates
+            // Skip duplicates for i
             while (i < n && nums[i] == nums[i - 1]) {
                 i++;
+            }
+         // skip duplicates for j
+            while (j < n && nums[j] == nums[j - 1]) {
+                j++;
             }
         }
     }

@@ -13,7 +13,7 @@
 
 
 2. Merge 2 sorted arrays(Leetcode 88):
-**Intuition:**
+**INTUITION:**
 
 - Both arrays are already sorted, and nums1 has extra space at the end.
 - To avoid overwriting elements, we start merging from the back.
@@ -33,5 +33,16 @@ without checking every possible pair.
 - If the difference is too small, we move the right pointer        forward.
 - If the difference is too large, we move the left pointer forward.
 - When the difference matches k, we count the pair and skip duplicates.
+
+4. Find k-Closest Element:
+
+**INTUITION:**
+- The array is already sorted
+- Closest elements to x always lie together
+- We use two pointers to define a window
+- Compare distance of leftmost and rightmost elements
+- Remove the farther one
+- Stop when only k elements remain
+
 
 
