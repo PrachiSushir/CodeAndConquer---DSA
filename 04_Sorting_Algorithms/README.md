@@ -44,5 +44,11 @@ without checking every possible pair.
 - Remove the farther one
 - Stop when only k elements remain
 
+5. Exponential search and unbounded binary search:
 
+**INTUITION:**
 
+- The array is sorted but its size is unknown, so we cannot directly apply binary search.
+- We first expand the search range exponentially (1, 2, 4, 8, ...) until the target is crossed.
+- Because the array is sorted, once an element larger than the target is found, the target must lie within the last valid range. - We then apply binary search in this range to find
+the element efficiently in logarithmic time.

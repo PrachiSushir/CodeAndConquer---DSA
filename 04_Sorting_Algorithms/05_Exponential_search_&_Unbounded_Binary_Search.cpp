@@ -53,6 +53,8 @@ This approach works efficiently only because the array
 is sorted. Sorting allows safe elimination of large
 portions of data and enables logarithmic searching.
 */
+// LOGIC :
+
 #include <iostream>
 using namespace std;
 
