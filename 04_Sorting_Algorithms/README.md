@@ -52,3 +52,11 @@ without checking every possible pair.
 - We first expand the search range exponentially (1, 2, 4, 8, ...) until the target is crossed.
 - Because the array is sorted, once an element larger than the target is found, the target must lie within the last valid range. - We then apply binary search in this range to find
 the element efficiently in logarithmic time.
+
+6. Painters partition problem:
+- A board cannot be split, so the minimum possible time is the length of the largest board.
+- If one painter paints all boards, the maximum time is the sum of all board lengths.
+- Hence, the answer lies between these two values.
+- We apply binary search on time, not on boards.
+- For each guessed time, we check if painters can paint boards contiguously without exceeding it.
+- The smallest feasible time is the final answer.

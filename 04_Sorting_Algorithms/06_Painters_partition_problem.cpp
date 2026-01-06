@@ -47,7 +47,7 @@ bool isPossible(vector<int>& boards, int k, int maxTime) {
 int paintersPartition(vector<int>& boards, int k) {
     int low = 0, high = 0;
 
-    for (int i = 0; i < boards.size(); i++) {
+    for (int i = 0; i< boards.size(); i++) {
         low = max(low, boards[i]);
         high += boards[i];
     }
