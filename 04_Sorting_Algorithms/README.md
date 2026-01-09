@@ -60,3 +60,14 @@ the element efficiently in logarithmic time.
 - We apply binary search on time, not on boards.
 - For each guessed time, we check if painters can paint boards contiguously without exceeding it.
 - The smallest feasible time is the final answer.
+
+EKO-SPOJ:
+
+**INTUITION:**
+
+- Cutting trees at a lower height gives more wood, and cutting at a higher height gives less wood.
+- We want to cut as high as possible but still collect at least M wood.
+- For any cutting height, we can check how much wood we get.
+- If the wood is enough, we try cutting higher to save more tree.
+- If the wood is not enough, we cut lower to get more wood.
+- Because this behavior is monotonic, binary search efficiently finds the answer.
