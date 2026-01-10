@@ -1,6 +1,6 @@
 
 
-//   Problem:
+// # Problem:
 //   Check whether string t is an anagram of string s.
 
 //   Approach:
@@ -9,6 +9,16 @@
 //   3. Decrease frequency using t
 //   4. If all frequencies become zero → valid anagram
 
+// # Time Complexity:
+//  Second Code (1 loop for both s and t together + 1 loop for 26 chars)
+//    O(n) + O(26)  =  O(n)
+
+// # Real Life Applications (Valid Anagram / Frequency Counting):
+// - Spell checking & word rearrangement detection (e.g., "listen" ↔ "silent")
+// - Plagiarism / cheating detection in word-jumble type questions
+// - Cryptography / cipher analysis (checking character frequency patterns)
+// - Text processing & NLP (finding words with same letters in search engines)
+// - Games like Scrabble / Word puzzles (verify if letters can form a word)
 #include <iostream>
 #include <string>
 using namespace std;
