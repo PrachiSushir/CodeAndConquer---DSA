@@ -54,6 +54,9 @@ without checking every possible pair.
 the element efficiently in logarithmic time.
 
 6. Painters partition problem:
+
+**INTUITION:**
+
 - A board cannot be split, so the minimum possible time is the length of the largest board.
 - If one painter paints all boards, the maximum time is the sum of all board lengths.
 - Hence, the answer lies between these two values.
@@ -61,7 +64,30 @@ the element efficiently in logarithmic time.
 - For each guessed time, we check if painters can paint boards contiguously without exceeding it.
 - The smallest feasible time is the final answer.
 
-EKO-SPOJ:
+7. Aggressive cow:
+
+**INTUITION:**
+
+- We want to place cows in stalls so that the minimum distance between any two cows is maximum.
+- Instead of directly finding the maximum distance, we guess a - distance and check if all cows can be placed with at least that gap.
+- If placement is possible, we try a bigger distance; otherwise, we reduce the distance.
+- This guessing and checking is done using binary search, with greedy placement to validate each guess.
+
+8. Book Allocation problem:
+
+**INTUITION:**
+- We want to minimize the maximum pages given to any student.
+- Answer lies between:
+    - 0 (minimum)
+    - sum of all pages (maximum)
+- Use Binary Search on this range.
+- For each mid, check:
+    - Can we distribute books among m students without exceeding mid pages per student?
+
+- If yes → try smaller value
+- If no → increase the limit
+
+9. EKO-SPOJ:
 
 **INTUITION:**
 
@@ -71,3 +97,14 @@ EKO-SPOJ:
 - If the wood is enough, we try cutting higher to save more tree.
 - If the wood is not enough, we cut lower to get more wood.
 - Because this behavior is monotonic, binary search efficiently finds the answer.
+
+10. PRATA-SPOJ:
+
+**INTUITION:**
+
+- Instead of trying every possible time, we guess a time and check if it works.
+- If cooks can finish the work in that time, we try to reduce it.
+- If they can’t, we increase the time.
+- By repeatedly narrowing the range, we quickly find the minimum required time.
+
+
