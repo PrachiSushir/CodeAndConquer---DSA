@@ -14,3 +14,15 @@
 - So at every step, we can decide exactly which direction to move.
 - Each move removes one full row or one full column from consideration,making the search efficient.
 - This avoids checking every element in the matrix.
+3. Spiral matrix(Leetcode 54):
+
+**INTUITION:**
+
+- We imagine the matrix as having boundaries on all four sides.
+- We start by moving in the right direction across the top boundary.
+- Then we move down along the right boundary.
+- Next, we move left across the bottom boundary and up along the left boundary.
+- After completing one full round, we shrink the boundaries inward.
+- This process repeats until all elements are visited exactly once.
+
+
