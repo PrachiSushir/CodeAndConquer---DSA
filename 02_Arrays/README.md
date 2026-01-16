@@ -11,6 +11,16 @@ This folder contains array problems solved in C++.
 6. Minimum time difference
 7. Number of laser beams in a bank 
 
+8. Two Sum problem(leetcode 1):
+
+**INTUITION:**
+
+- Instead of checking every possible pair, we remember the numbers we have already seen.
+- For each element, we calculate what number is needed to reach the target.
+- If that required number was seen earlier, we immediately get the answer.
+- A hash map helps us store and search numbers in constant time, making the solution fast.
+- This avoids the slow brute-force approach of checking all pairs.
+
 
 ## Language
 - C++
