@@ -21,6 +21,14 @@ This folder contains array problems solved in C++.
 - A hash map helps us store and search numbers in constant time, making the solution fast.
 - This avoids the slow brute-force approach of checking all pairs.
 
+9. Find the duplicate Number(Leetcode 287):
+
+- Think of the array as a linked list where each index points to nums[index].
+- Because one number is repeated, two indices point to the same value, creating a cycle.
+- The duplicate number is the entry point of this cycle.
+- Floyd’s Cycle Detection algorithm helps find this entry point efficiently.
+
+
 
 ## Language
 - C++
