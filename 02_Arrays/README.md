@@ -28,7 +28,21 @@ This folder contains array problems solved in C++.
 - The duplicate number is the entry point of this cycle.
 - Floyd’s Cycle Detection algorithm helps find this entry point efficiently.
 
+ 10. 4 Sum problem
 
+**INTUITION**:
+
+We need to find 4 numbers whose sum equals target.
+Brute force would be checking all 4 combinations -> O(n^4), which is too slow.
+
+To optimize:
+- Sort the array
+- Fix first two numbers (i and j)
+- Use two pointers for remaining two numbers (low and high)
+
+Sorting helps because:
+1) We can move pointers smartly depending on sum
+2) It becomes easy to skip duplicates
 
 ## Language
 - C++
