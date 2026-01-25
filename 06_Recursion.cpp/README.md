@@ -28,3 +28,14 @@ choice was wrong.
 So we go back and change the placement.
 This is called:
 BACKTRACKING (try → fail → undo → try again)
+
+3. Reverse String(Leetcode 344):
+
+**INTUITION:**
+
+- Swap the first and last characters of the string.
+- Once swapped, both characters reach their correct positions.
+- Now repeat the same process for the remaining inner part.
+- Recursion helps by reducing the problem size each time.
+- Stop when the left index crosses the right index(Basecase).
+
