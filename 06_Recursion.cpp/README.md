@@ -39,3 +39,10 @@ BACKTRACKING (try → fail → undo → try again)
 - Recursion helps by reducing the problem size each time.
 - Stop when the left index crosses the right index(Basecase).
 
+4. Valid palindrome(Leetcode 125):
+
+**INTUITION:**
+- Think of a palindrome like a mirror.
+- If you stand in the middle of the word and place a mirror:
+- Left side should look exactly like the right side.
+- So instead of checking the whole string at once, we shrink the problem step by step.
