@@ -46,3 +46,23 @@ BACKTRACKING (try → fail → undo → try again)
 - If you stand in the middle of the word and place a mirror:
 - Left side should look exactly like the right side.
 - So instead of checking the whole string at once, we shrink the problem step by step.
+
+5. Print all subarray 
+
+**INTUITION:**
+
+- Think of fixing one starting index at a time.
+- For that start, keep expanding the subarray by moving the end index forward.
+- Each expansion prints one valid contiguous subarray.
+- Once the end reaches the array limit, move the start to the next position.
+- Recursion replaces loops but the logic stays the same.
+
+6. Remove all occurances of substring
+
+**INTUITION:** 
+
+Instead of removing all occurrences at once:
+1. Remove ONE occurrence of 'part'
+2. Let recursion handle the rest of the string
+
+"Fix one part now, and trust recursion to fix the remaining string."
