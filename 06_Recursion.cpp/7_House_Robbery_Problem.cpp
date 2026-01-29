@@ -27,8 +27,29 @@ maximum of the two.
 Base Case:
 If the index goes beyond the last house, return 0.
 
-Code Implementation (C++ using Recursion):
-------------------------------------------------------------
+# Time Complexity:
+O(2^n)
+
+Explanation:
+- For each house, the function makes two recursive calls
+  (rob or skip).
+- This creates an exponential number of calls.
+- Hence, the time complexity is O(2^n).
+
+# Space Complexity:
+O(n)
+
+Explanation:
+- The maximum depth of the recursion stack can go up to n
+  (number of houses).
+
+# Real-Life Applications of This Logic:
+1. Choosing non-adjacent tasks to avoid conflicts
+2. Investment decisions with cooldown periods
+3. Resource allocation with interference constraints
+4. Game AI decision-making with penalties
+5. Scheduling problems with adjacency restrictions
+
 */
 
 #include <iostream>

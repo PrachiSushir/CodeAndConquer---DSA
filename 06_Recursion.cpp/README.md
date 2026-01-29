@@ -66,3 +66,22 @@ Instead of removing all occurrences at once:
 2. Let recursion handle the rest of the string
 
 "Fix one part now, and trust recursion to fix the remaining string."
+
+7. House robbery problem
+
+**Intuition:**
+
+Think of the problem as making a decision at every house.
+When standing at a house, you ask:
+"Should I rob this house or skip it?"
+
+- If you rob the current house:
+  You gain its money, but you must skip the next house
+  to avoid robbing adjacent houses.
+
+- If you skip the current house:
+  You move to the next house and make the decision there.
+
+By exploring both choices recursively and taking the
+maximum result, we ensure the optimal amount of money
+is robbed.
