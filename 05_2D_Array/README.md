@@ -14,6 +14,7 @@
 - So at every step, we can decide exactly which direction to move.
 - Each move removes one full row or one full column from consideration,making the search efficient.
 - This avoids checking every element in the matrix.
+
 3. Spiral matrix(Leetcode 54):
 
 **INTUITION:**
@@ -24,5 +25,15 @@
 - Next, we move left across the bottom boundary and up along the left boundary.
 - After completing one full round, we shrink the boundaries inward.
 - This process repeats until all elements are visited exactly once.
+
+4. Find missing and repeated values(Leetcode 2965):
+
+**INTUITION:**
+
+- The grid should contain numbers from 1 to n²only once.
+- Use a set to find the number that appears twice.
+- Compute the actual sum of all grid elements.
+- Calculate the expected sum using n²(n²+1)/2.
+- The missing number is found using expectedSum + repeated − actualSum.
 
 

@@ -44,5 +44,16 @@ Sorting helps because:
 1) We can move pointers smartly depending on sum
 2) It becomes easy to skip duplicates
 
+11. Subarray Sum(leetcode 560):
+
+**INTUITION:**
+Let prefixSum[i] = sum of elements from index 0 to i.
+If sum of subarray (l to r) = k, then:
+prefixSum[r] - prefixSum[l-1] = k
+  prefixSum[l-1] = prefixSum[r] - k
+So for every prefixSum, if (prefixSum - k) exists before, then that many
+subarrays ending at current index have sum k.
+
+
 ## Language
 - C++
