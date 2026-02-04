@@ -85,3 +85,12 @@ When standing at a house, you ask:
 By exploring both choices recursively and taking the
 maximum result, we ensure the optimal amount of money
 is robbed.
+
+
+
+**INTUITION:**
+- Buy at the LOWEST price so far
+- Sell at the HIGHEST price after buying
+- At each day:
+    -Think: "If I sell today, what profit will I get?"
+- Keep updating the best profit One pass. Smart thinking. No brute force.
