@@ -32,51 +32,105 @@ This spiral traversal logic is useful in scenarios such as:
   processing is required.
 - Reading data from sensors arranged in grid form in a systematic circular manner.
 */
-#include<iostream>
-#include<vector>
-using namespace std;
- vector<int>spiralOrder(vector<vector<int>>&matrix){
-    vector<int>ans;
-    int m = matrix.size();
-    int n = matrix[0].size();
+// #include<iostream>
+// #include<vector>
+// using namespace std;
+//  vector<int>spiralOrder(vector<vector<int>>&matrix){
+//     vector<int>ans;
+//     int m = matrix.size();
+//     int n = matrix[0].size();
 
-    int srow = 0;
-    int scol = 0;
-    int erow = m-1;
-    int ecol = n-1;
- while(srow<=erow && scol<=ecol){
-    // top
-    for(int j=scol; j<=ecol; j++){
-        ans.push_back(matrix[srow][j]);
-    }
-    // right
-    for(int i=srow+1;i<=erow;i++){
-        ans.push_back(matrix[i][ecol]);
-    }
-    // bottom 
-    for(int j=ecol-1; j>=scol; j--){
-        if(srow==erow){
-            break;
-        }
-        ans.push_back(matrix[erow][j]);
-    }
-    // left
-    for(int i=erow-1; i>srow;i--){
-        if(scol==ecol){
-            break;
-        }
+//     int srow = 0;
+//     int scol = 0;
+//     int erow = m-1;
+//     int ecol = n-1;
+//  while(srow<=erow && scol<=ecol){
+//     // top
+//     for(int j=scol; j<=ecol; j++){
+//         ans.push_back(matrix[srow][j]);
+//     }
+//     // right
+//     for(int i=srow+1;i<=erow;i++){
+//         ans.push_back(matrix[i][ecol]);
+//     }
+//     // bottom 
+//     for(int j=ecol-1; j>=scol; j--){
+//         if(srow==erow){
+//             break;
+//         }
+//         ans.push_back(matrix[erow][j]);
+//     }
+//     // left
+//     for(int i=erow-1; i>srow;i--){
+//         if(scol==ecol){
+//             break;
+//         }
         
-        ans.push_back(matrix[i][scol]);
-    }
-    srow++, erow--, scol++, ecol--;
- }
-return ans;
- }
-int main(){
-    vector<vector<int>>matrix = {{1,2,3},{4,5,6},{7,8,9}};
-    vector<int>result = spiralOrder(matrix);
-    for(int i:result){
-        cout<<i<<" ";
-    }
-    return 0;
-}
+//         ans.push_back(matrix[i][scol]);
+//     }
+//     srow++, erow--, scol++, ecol--;
+//  }
+// return ans;
+//  }
+// int main(){
+//     vector<vector<int>>matrix = {{1,2,3},{4,5,6},{7,8,9}};
+//     vector<int>result = spiralOrder(matrix);
+//     for(int i:result){
+//         cout<<i<<" ";
+//     }
+   
+//     return 0;
+// }
+
+// //==================For array practice================
+// #include<iostream>
+// using namespace std;
+// void spiralMatrix(int matrix[][4], int n, int m){
+//     int srow = 0; 
+//     int scol = 0;
+//     int erow = n-1;
+//     int ecol = m-1;
+//  while(srow<=erow && scol<=ecol){
+
+//     // top
+//     for(int j = scol; j<=ecol; j++){
+//   cout<<matrix[srow][j]<<" ";
+//     }
+
+//     // right
+//     for(int i=srow+1; i<=erow; i++){
+//       cout<<matrix[i][ecol]<<" ";
+//     }
+//     // bottom
+//     for(int j = ecol-1; j>=scol; j--){
+//       if(srow==erow){    //corner case
+//         break;
+//       }
+//       cout<<matrix[erow][j]<<" ";
+//     }
+//     // left
+//     for(int i = erow-1; i>srow; i--){
+//       if(scol==ecol){ //corner case
+//         break;
+//       }
+//       cout<<matrix[i][scol]<<" ";
+//     }
+//   scol++;
+//   ecol--;
+//   srow++;
+//   erow--;
+// }
+// cout<<endl;
+// }
+// int main(){
+// int matrix[4][4]={{1,2,3,4},{5,6,7,8},{9,10,11,12},{13,14,15,16}};
+// int n = 4; 
+// int m = 4;
+// spiralMatrix(matrix, n, m);
+// return 0;
+
+// }
+
+
+// TC: O(n * m)
+// SC: O(1)

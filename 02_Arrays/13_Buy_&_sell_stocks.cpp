@@ -23,9 +23,9 @@ using namespace std;
 void BuySellStock(int prices[],int n){
     int bestBuy[100000];
     bestBuy[0]=INT_MAX;
-    for(int i = 1; i<n; i++){
+    for(int i = 1; i<n; i++){    // why i starts with 1 ===> selling and buying can't be on same day also buying day must be the day before sell
         bestBuy[i]=min(prices[i-1],bestBuy[i-1]);
-        // cout<<bestBuy[i];
+       
 
     }
     int maxProfit = 0;
@@ -43,6 +43,3 @@ int main(){
   
     return 0;
 }
-
-// //TC : o(n);
-

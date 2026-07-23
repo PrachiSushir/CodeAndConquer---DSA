@@ -15,13 +15,15 @@
 //     cout<<marks2[3]<<endl; //surity
 //     return 0;
 // }
+
+
 // //=============================//to find the length of array=====================================================
 
 // #include<iostream>
 // using namespace std;
 // int main(){
 
-//  int nums[] = {1,2,3,4,5};  //memory is allocated at the time of compilation
+//  int nums[5] = {1,2,3,4,5};  //memory is allocated at the time of compilation
 //  int length = sizeof(nums)/sizeof(int);
 //  cout<<length<<endl;
 
@@ -61,8 +63,7 @@
 //     return 0;
 // }
 
-
-// // ================================//Find the maximum & minimum value of an array==========================================
+// // ============================//Find the maximum & minimum value of an array===============================
 
 // #include<iostream>
 // using namespace std;
@@ -88,6 +89,7 @@
 //     cout<<"smallest value is : "<<min<<endl;
 //     return 0;
 // }
+
 // //-----OR-----//
 // #include<iostream>
 // using namespace std;
@@ -135,12 +137,12 @@
 //     return 0;
 // }
 
+
 // //==========================================// Reverse an Array==========================================================
 
 // #include<iostream>
 // using namespace std;
 // void printArray(int arr[], int n){
-//     int copyArr[6];
     
 //     for(int i = 0; i<n; i++){
 //         cout<<arr[i]<<",";
@@ -161,6 +163,8 @@
 //     printArray(arr,n);
 //     return 0;
 // }
+
+// //-------------OR----------------------------
 
 // #include<iostream>
 // using namespace std;
@@ -221,21 +225,22 @@
 //     return 0;
 // }
 
-// // ============================================// //Array POINTER=========================================================
-// #include<iostream>
-// using namespace std;
-// int main(){
-//     int x =10;
-//     int *ptr = &x;
-//     cout<<ptr<<endl;
 
-//     int y =  15;
-//     ptr = &y;
-//     cout<<ptr<<endl; //value/address of pointer can change
-//     // BUT
-//     int arr[5];
-//     cout<<arr<<endl;
-// }
+// // ============================================// //Array POINTER=========================================================
+#include<iostream>
+using namespace std;
+int main(){
+    int x =10;
+    int *ptr = &x;  //address of x is stored in ptr pointer
+    cout<<ptr<<endl;
+
+    int y =  15;
+    ptr = &y;
+    cout<<ptr<<endl; //value/address of pointer can change
+    // BUT
+    int arr[5];
+    cout<<arr<<endl;
+}
 
 //     int z = 25;
 //     arr = &z; //not possible in array pointer as we cant overwrite a value in array bcoz it is a constatnt value, it is always points to the zeroth idx of array and hence called as constant pointer, it is a read only value
@@ -256,7 +261,7 @@
 // // //================================================
 // cout<<(ptr+3)<<endl; // // 3*int===>3*4 = 12 spaces leading. same for -3, this arithematic ptr are generally used in arrays
 // // //================================================
-// // ptr2-ptr1(how much space is in betwwen ptr1 and ptr2) is possible but ptr1 + pt2 is not as it is invalid or nonsensable
+// // ptr2-ptr1(how much space is in between ptr1 and ptr2) is possible but ptr1 + pt2 is not as it is invalid or nonsensable
 // // //================================================
 // // comparison 
 // // cout<<(ptr2>ptr1)====> yess generally comparison is used as '==' to check if both ptr are on same memory location or not

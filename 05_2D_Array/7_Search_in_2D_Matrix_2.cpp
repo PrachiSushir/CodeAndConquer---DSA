@@ -1,7 +1,7 @@
 
 /*
 # Problem Statement:
-Given a 2D matrix of integers where each row is sorted in ascending order
+Given a 2D matrix of integers where each row is **sorted** in ascending order
 from left to right and each column is sorted in ascending order from top to bottom,
 write an efficient algorithm to determine whether a given target value exists in the matrix.
 
@@ -29,32 +29,61 @@ sorted performance metrics.
 */
 // LOGIC:
 
-#include<iostream>
-#include<vector>
-using namespace std;
- bool SearchInMatrix(vector<vector<int>>& matrix, int target){
-    int m = matrix.size();
-    int n = matrix[0].size();
+// #include<iostream>
+// #include<vector>
+// using namespace std;
+//  bool SearchInMatrix(vector<vector<int>>& matrix, int target){
+//     int m = matrix.size();
+//     int n = matrix[0].size();
 
-    int row = 0;
-    int col = n-1;
+//     int row = 0;
+//     int col = n-1;
 
-    while(row<m && col>=0){
-        if(target == matrix[row][col]){
-            return true;
-        } else if(target < matrix[row][col]){
-            col--;
-        } else {
-            row++;
-        }
-    }
+//     while(row<m && col>=0){
+//         if(target == matrix[row][col]){
+//             cout<<"found at cell: "<<row<<","<<col<<endl;
+//             return true;
+//         } else if(target < matrix[row][col]){
+//             col--;
+//         } else {
+//             row++;
+//         }
+//     }
 
-return false;
+// return false;
 
- }
-int main() {
-    vector<vector<int>> matrix = {{1,4,7,11},{2,5,8,12},{3,6,9,16},{10,13,14,17}};
-    int target = 6;
-    cout<<SearchInMatrix(matrix, target);
-    return 0;
-}
+//  }
+// int main() {
+//     vector<vector<int>> matrix = {{1,4,7,11},{2,5,8,12},{3,6,9,16},{10,13,14,17}};
+//     int target = 6;
+//     cout<<SearchInMatrix(matrix, target);
+//     return 0;
+// }
+
+// #include<iostream>
+// using namespace std;
+// bool findKey(int mat[4][4], int n, int m, int key){
+//     int row = n-1; 
+//     int col = 0;
+//     while(row>=0 && col<m){
+//         if(key==mat[row][col]){
+//             cout<<"key find at: "<<row<<","<<col<<endl;
+//             return true;
+//         }
+//         else if(key<mat[row][col]){
+//             row--;
+//         }else{
+//             col++;
+//         }
+//     }
+// }
+// int main(){
+//     int mat[4][4]={{1,4,7,11},{2,5,8,12},{3,6,9,16},{10,13,14,17}};
+//     int n = 4;
+//     int m = 4;
+//     int key = 8;
+//     cout<<findKey(mat, n, m, key);
+//     return 0;
+// }
+
+
