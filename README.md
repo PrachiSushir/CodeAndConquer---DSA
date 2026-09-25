@@ -16,7 +16,7 @@ and solutions covering fundamental to advanced DSA topics.
 3. [Sorting Algorithms](./04_Sorting_Algorithms)
 4. [2D Arrays](./05_2D_Array)
 5. [Vectors](./06_Vectors)  
-6. [Bitwise Operator](./07_Bitwise_opeartor)
+6. [Bitwise Operator](./07_Bitwise_operator)
 7. [OOPS](./08_OOPS)  
 8. [Recursion](./09_Recursion)
 9. [Divide & Conquer](./10_Divide_&_Conquer) 
