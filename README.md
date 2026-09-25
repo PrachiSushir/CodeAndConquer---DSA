@@ -1,14 +1,13 @@
 # CodeAndConquer – DSA Practice Repository
 
-This repository contains my consistent practice of Data Structures
-and Algorithms using C++.  
-I solve problems daily, mainly from LeetCode, while following a
-following a structured DSA curriculum and solving problems
-regularly from platforms like LeetCode
-for structured learning.
+This repository contains my learning and practice of
+Data Structures and Algorithms using C++.
 
-The goal of this repository is to build strong problem-solving skills,
-maintain clean code organization, and track my long-term DSA progress.
+I created this repository to organize the concepts, algorithms,
+and problems I learned throughout my DSA journey.
+
+The repository includes implementations, practice problems,
+and solutions covering fundamental to advanced DSA topics.
 
 ## Learning Sequence 
 
