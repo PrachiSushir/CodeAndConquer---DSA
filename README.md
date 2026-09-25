@@ -1,38 +1,38 @@
 # CodeAndConquer – DSA Practice Repository
 
-This repository contains my consistent practice of Data Structures
-and Algorithms using C++.  
-I solve problems daily, mainly from LeetCode, while following a
-following a structured DSA curriculum and solving problems
-regularly from platforms like LeetCode
-for structured learning.
+This repository contains my learning and practice of
+Data Structures and Algorithms using C++.
 
-The goal of this repository is to build strong problem-solving skills,
-maintain clean code organization, and track my long-term DSA progress.
+I created this repository to organize the concepts, algorithms,
+and problems I learned throughout my DSA journey.
+
+The repository includes implementations, practice problems,
+and solutions covering fundamental to advanced DSA topics.
 
 ## Learning Sequence 
 
-1. Arrays  
-2. 2D Arrays  
-3. Strings  
-4. Pointers  
-5. Time & Space Complexity  
-6. Recursion  
-7. Backtracking  
-8. Object Oriented Programming (OOPs)  
-9. Linked List  
-10. Stacks  
-11. Queues  
-12. Deque  
-13. Trees  
-14. Binary Search Tree (BST)  
-15. Heaps / Priority Queue  
-16. Hashing  
-17. Graphs  
-18. Greedy Algorithms  
-19. Dynamic Programming  
-20. Tries  
-21. Segment Trees
+1. [Arrays](./02_Arrays)
+2. [String](./03_String)
+3. 2D Arrays  
+4. Strings  
+5. Pointers  
+6. Time & Space Complexity  
+7. Recursion  
+8. Backtracking  
+9. Object Oriented Programming (OOPs)  
+10. Linked List  
+11. Stacks  
+12. Queues  
+13. Deque  
+14. Trees  
+15. Binary Search Tree (BST)  
+16. Heaps / Priority Queue  
+17. Hashing  
+18. Graphs  
+19. Greedy Algorithms  
+20. Dynamic Programming  
+21. Tries  
+22. Segment Trees
 
 ## Repository Structure
 
