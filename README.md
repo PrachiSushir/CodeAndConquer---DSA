@@ -13,26 +13,28 @@ and solutions covering fundamental to advanced DSA topics.
 
 1. [Arrays](./02_Arrays)
 2. [String](./03_String)
-3. 2D Arrays  
-4. Strings  
-5. Pointers  
-6. Time & Space Complexity  
-7. Recursion  
-8. Backtracking  
-9. Object Oriented Programming (OOPs)  
-10. Linked List  
-11. Stacks  
-12. Queues  
-13. Deque  
-14. Trees  
-15. Binary Search Tree (BST)  
-16. Heaps / Priority Queue  
-17. Hashing  
-18. Graphs  
-19. Greedy Algorithms  
-20. Dynamic Programming  
-21. Tries  
-22. Segment Trees
+3. [Sorting Algorithms](./04_Sorting_Algorithms)
+4. [2D Arrays](./05_2D_Array)
+5. [Vectors](./06_Vectors)  
+6. [Bitwise Operator](./07_Bitwise_opeartor)
+7. [OOPS](./08_OOPS)  
+8. [Recursion](./09_Recursion)
+9. [Divide & Conquer](./10_Divide_&_Conquer) 
+10. [Backtracking](./11_Backtracking)
+11. [Linked List](./12_Linked_List) 
+12. [Stack](./13_Stack) 
+13. [Queue](./14_Queue)  
+14. [Greedy Algorithm](./15_Greedy_Algorithm)  
+15. [Binary Tree](./16_Binary_Trees)  
+16. [Binary Search Tree](./17_Binary_Search_Tree)  
+17. Binary Search Tree (BST)  
+18. Heaps / Priority Queue  
+19. Hashing  
+20. Graphs  
+21. Greedy Algorithms  
+22. Dynamic Programming  
+23. Tries  
+24. Segment Trees
 
 ## Repository Structure
 
