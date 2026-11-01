@@ -29,7 +29,7 @@ and solutions covering fundamental to advanced DSA topics.
 16. [Binary Search Tree](./17_Binary_Search_Tree)    
 17. [Heaps / Priority Queue](./18_Heap_&_Priority_Queue) 
 18. [Hashing](./19_Hashing)  
-19. Tries  
+19. [Tries](./20_Tries)  
 20. Graphs 
 21. Dynamic Programming  
 22. Segment Trees
